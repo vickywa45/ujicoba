@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    }
+    
+    body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    }
+    
+    .hero {
+        /* Ganti dengan nama file kamu */
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    color: white;
+    }
+    
+    .top-nav {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    font-weight: bold;
+    z-index: 10;
+    }
+    
+    .top-nav .logo {
+    background: transparent;
+    color: red;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    }
+    
+    .top-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    }
+    .top-nav li {
+    cursor: pointer;
+    font-weight: bold;
+    }
+    
+    .text-overlay {
+    position: absolute;
+    bottom: 120px;
+    left: 20px;
+    color: white;
+    }
+    
+    .text-overlay h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    }
+    
+    .text-overlay p {
+    font-size: 14px;
+    line-height: 1.4;
+    background-color: rgb(0, 0, 0) 80%;
+    padding: 4%;
+    border: rgb(255, 255, 255);
+    list-style: none;
+    }
+    
+    .text-overlay h3 {
+    font-size: 24px;
+    color: red;
+    margin: 10px 0 5px;
+    }
+    
+    .text-overlay .note {
+    color: #f55;
+    font-size: 13px;
+    }
+    
+    .bottom-icons {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    z-index: 10;
+    }
+    
+    .icon {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .logo-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    top:5px;
+    left: 30px;
+    }
+    .popup {
+        position: absolute;
+        bottom: 80px;
+        right: 50px;
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        display: none;
+        z-index: 20;
+        }
+    .popup p {
+        margin-bottom: 10px;
+        font-size: 14px;
+        }
+    .scroll {
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        width: 100vw;
+        height: 100vh;
+        scroll-behavior: smooth;
+        }
+    .slide {
+        flex: 0 0 100vw;
+        height: 100vh;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        position: relative;
+        }
+    .label {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        z-index: 10;
+    }
+    .scroll::-webkit-scrollbar {
+        display: none;
+    }
